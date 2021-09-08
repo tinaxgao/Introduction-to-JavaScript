@@ -67,9 +67,10 @@ Do the following:
 */
 
 function multiply(a,b){
-  return a * b;
+  console.log(a * b);
 }
 
+multiply(2,4);
 
 
 
@@ -84,7 +85,8 @@ Do the following:
 */
 
 function dogYears(age){
-  return age * 7;
+  age * 7;
+  return dogYears;
 }
 
 
@@ -119,32 +121,33 @@ NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.449
 function hungryDog(age, weight){
   if (age < 1){
     if (1/6 <= age && age < 1/3) {
-      return weight * .1;
+      console.log(weight * .1);
     }
     else if (1/3 <= age && age < 7/12) {
-      return weight * .05;
+      console.log(weight * .05);
     }
     else {
-      return weight * .04;
+      console.log(weight * .04);
     }
   }
   else {
     if (0 <= weight && weight < 6) {
-      return weight * .05;
+      console.log(weight * .05);
     }
     else if (6 <= weight && weight < 11) {
-      return weight * .04;
+      console.log(weight * .04);
     }
     else if (11 <= weight && weight < 16) {
-      return weight * .03;
+      console.log(weight * .03);
     }
     else {
-      return weight * .02;
+      console.log(weight * .02);
     }
   }
+  return hungryDog;
 } 
 
-console.log(hungryDog(1,15));
+hungryDog(1,15)
 
 
 
@@ -168,8 +171,8 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-function game(user, computer){
-}
+
+
 
 
 
