@@ -314,10 +314,29 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+// TINA TRY 1
+const vowels = [`a`,`A`,`e`,`E`,`i`,`I`,`o`,`O`,`u`,`U`];
+
+function vowelCounter(str) {
+  str = str.split('');
+  console.log(str);
+  
+  console.log(`string length ` + str.length);
+  
+
+  let n = 0;  // number of vowels
+  let i = 0; // index of str
+  
+  while (i < str.length){
+  
+    if (vowels.includes(str[i])){n++};
+    i++;
+    };
+  return n;
 }
 
+console.log(vowelCounter(`hEllo`)); // returns 2
+// END TINA TRY 1
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
